@@ -21,7 +21,7 @@ void Task64()
     int m = Convert.ToInt32(Console.ReadLine());
     Console.Write("Введите число n = ");
     int n = Convert.ToInt32(Console.ReadLine());
-
+    if (m > n) { int temp = m; m = n; n = temp; };
     Recurs(m, n);
 
     void Recurs(int m, int n)
@@ -49,6 +49,7 @@ void Task66()
     int m = Convert.ToInt32(Console.ReadLine());
     Console.Write("Введите число n = ");
     int n = Convert.ToInt32(Console.ReadLine());
+    if (m > n) { int temp = m; m = n; n = temp; };
     int sum = 0;
 
     Recurs(m, n);
@@ -65,7 +66,7 @@ void Task66()
 
         else
         {
-            Console.Write(sum + ", ");
+            Console.Write(sum);
             return;
         }
     }
